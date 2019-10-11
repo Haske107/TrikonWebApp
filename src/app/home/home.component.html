@@ -31,8 +31,9 @@
 	</div>
 
   <mat-grid-list cols="4" rowHeight="1:1" class="Grid_List">
-      <mat-grid-tile class="tile" *ngFor="let Project of ProjectIDs">
+      <mat-grid-tile class="tile" *ngFor="let Project of ProjectIDs; index as i;" (mouseover)="MouseOverActiveIndex = i">>
         <img src="{{GoogleBaseLink + Project}}" alt="" class="Project_Image">
+        <img src="{{GoogleBaseLink + TitledProjectIDs[i]}}" alt="" class="Project_Image Titled" [ngStyle]="{'opacity': MouseOverActiveIndex != i ? '0' : '1'}">
       </mat-grid-tile>
   </mat-grid-list>
 </div>

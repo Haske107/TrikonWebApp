@@ -47,7 +47,6 @@
       height: 100vh;
       overflow: hidden;
       padding:0;
-      margin:0;
     }
         .bannervideosource  {
           border: none;
@@ -83,7 +82,7 @@
             }
     .Grid_List  {
       position: absolute;
-      top: 100vh;
+      top: calc(100vh + 1px);
       width: 100%;
       z-index: 1;
     }
@@ -93,6 +92,7 @@
           position: absolute;
           left: 0;
           top: 0;
+          transition: .5s; 
           }
 
 
