@@ -1,1 +1,6 @@
 /* Add application styles & imports to this file! */
+
+@font-face {
+  font-family: lato;
+  src: url(assets/font/Lato.otf) format("opentype");
+}
